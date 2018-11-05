@@ -1,0 +1,17 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">Musical Breaks</string>
+    <!-- Category name for albums [CHAR LIMIT=20] -->
+    <string name="category_albums">Albums</string>
+    <!-- Category name for artists [CHAR LIMIT=20] -->
+    <string name="category_artists">Artists</string>
+    <!-- Category name for tracks [CHAR LIMIT=20] -->
+    <string name="category_tracks">Tracks</string>
+    <string name="album_activity_blurb">Clicking on an album button brings you to this activity where your music is arranged by album name. From here, except the main activity, all other activities can be accessed and the song now playing can be paused and unpaused. Currently, nothing happens when an album is clicked.</string>
+    <string name="atom_heart_mother">Atom Heart Mother</string>
+    <string name="pink_floyd">Pink Floyd</string>
+    <string name="main_activity_blurb">This is the main layout. From here the user can navigate to all other activities - a list of albums, of artists, of tracks and a now playing screen. The user can also play or pause the most recently played track direct from the now playing bar across the top.</string>
+    <string name="artist_activity_blurb">Clicking on an artist button brings you to this activity where your music is arranged by artist name. From here, except the main activity, all other activities can be accessed and the song now playing can be paused and unpaused. Currently, nothing happens when an artist is clicked.</string>
+    <string name="track_activity_blurb">Clicking on a track button brings you to this activity where your music is arranged by track name. From here, except the main activity, all other activities can be accessed and the song now playing can be paused and unpaused. Currently, when a tracked is clicked, the user is taken to the now playing screen where the info from the clicked track is displayed. This info is also displayed on all now playing views across the app.</string>
+    <string name="now_playing_activity_blurb">Clicking on any of the now playing bars brings you to this activity where you can see the currently playing song and play, pause, skip or restart it. From here, except the main activity, all other activities can be accessed.</string>
+</resources>
