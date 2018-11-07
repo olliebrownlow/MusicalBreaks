@@ -56,13 +56,13 @@
                 android:id="@+id/playButton"
                 style="@style/PlayPauseButtonStyle"
                 android:onClick="playButton"
-                android:src="@drawable/ic_play_circle_outline" />
+                android:src="@mipmap/ic_play_circle_outline" />
 
             <ImageView
                 android:id="@+id/pauseButton"
                 style="@style/PlayPauseButtonStyle"
                 android:onClick="pauseButton"
-                android:src="@drawable/ic_pause_circle_outline" />
+                android:src="@mipmap/ic_pause_circle_outline" />
 
         </LinearLayout>
 

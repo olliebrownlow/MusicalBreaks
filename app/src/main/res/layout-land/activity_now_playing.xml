@@ -105,24 +105,24 @@
                     <ImageView
                         android:id="@+id/backButton"
                         style="@style/ControlButtonStyle"
-                        android:src="@drawable/ic_skipback" />
+                        android:src="@mipmap/ic_skipback" />
 
                     <ImageView
                         android:id="@+id/playButton"
                         style="@style/ControlButtonStyle"
                         android:onClick="playButton"
-                        android:src="@drawable/ic_play" />
+                        android:src="@mipmap/ic_play" />
 
                     <ImageView
                         android:id="@+id/pauseButton"
                         style="@style/ControlButtonStyle"
                         android:onClick="pauseButton"
-                        android:src="@drawable/ic_pause" />
+                        android:src="@mipmap/ic_pause" />
 
                     <ImageView
                         android:id="@+id/forwardButton"
                         style="@style/ControlButtonStyle"
-                        android:src="@drawable/ic_skipforward" />
+                        android:src="@mipmap/ic_skipforward" />
 
                 </LinearLayout>
 
