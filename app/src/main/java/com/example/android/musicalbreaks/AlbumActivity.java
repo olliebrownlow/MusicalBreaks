@@ -4,8 +4,10 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Adapter;
@@ -26,6 +28,9 @@ public class AlbumActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.album_list);
+
+        //To customise home button in action bar
+        getSupportActionBar().setHomeAsUpIndicator(R.mipmap.ic_action_home);
 
         //To slide from left to right between activities
         overridePendingTransition(R.anim.anim, R.anim.anim2);

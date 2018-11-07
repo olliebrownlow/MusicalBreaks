@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_musical_breaks"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,21 +21,39 @@
         <activity
             android:name=".AlbumActivity"
             android:label="@string/category_albums"
+            android:parentActivityName="com.example.android.musicalbreaks.MainActivity"
             android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.musicalbreaks.MainActivity" />
         </activity>
         <activity
             android:name=".ArtistActivity"
             android:label="@string/category_artists"
+            android:parentActivityName="com.example.android.musicalbreaks.MainActivity"
             android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.musicalbreaks.MainActivity" />
+
         </activity>
         <activity
             android:name=".TrackActivity"
             android:label="@string/category_tracks"
+            android:parentActivityName="com.example.android.musicalbreaks.MainActivity"
             android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.musicalbreaks.MainActivity" />
 
         </activity>
-        <activity android:name=".NowPlayingActivity"
-            android:label="Now Playing">
+        <activity
+            android:name=".NowPlayingActivity"
+            android:label="Now Playing"
+            android:parentActivityName="com.example.android.musicalbreaks.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.musicalbreaks.MainActivity" />
 
         </activity>
     </application>

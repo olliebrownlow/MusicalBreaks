@@ -19,6 +19,9 @@ public class NowPlayingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_now_playing);
 
+        //To customise home button in action bar
+        getSupportActionBar().setHomeAsUpIndicator(R.mipmap.ic_action_home);
+
         //To slide from left to right between activities
         overridePendingTransition(R.anim.anim, R.anim.anim2);
     }

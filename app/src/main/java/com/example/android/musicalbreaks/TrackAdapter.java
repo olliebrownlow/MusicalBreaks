@@ -26,25 +26,25 @@ public class TrackAdapter extends ArrayAdapter<Track> {
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.track_list_view, parent, false);
+                    R.layout.list_of_tracks_view, parent, false);
         }
 
         // Get the {@link Track} object located at this position in the list
         Track currentTrack = getItem(position);
 
-        // Find the TextView in the track_list_view.xml layout with the ID list_item_track_name
+        // Find the TextView in the list_of_tracks_viewview.xml layout with the ID list_item_track_name
         TextView trackNameTextView = listItemView.findViewById(R.id.list_item_track_name);
         // Get the track name from the current Track object and
         // set this text on the track name TextView
         trackNameTextView.setText(currentTrack.getTrackName());
 
-        // Find the TextView in the track_list_view.xml layout with the ID list_item_artist_name
+        // Find the TextView in the list_of_tracks_view.xml.xml layout with the ID list_item_artist_name
         TextView artistNameTextView = listItemView.findViewById(R.id.list_item_artist_name);
         // Get the artist name from the current Track object and
         // set this text on the artistNameTextView
         artistNameTextView.setText(currentTrack.getArtistName());
 
-        // Find the ImageView in the track_list_view.xml layout with the ID list_item_album_art
+        // Find the ImageView in the list_of_tracks_view.xml.xml layout with the ID list_item_album_art
         ImageView albumArtImageView = listItemView.findViewById(R.id.list_item_album_art);
         // Get the album art from the current Track object and
         // set this image to albumArtImageView

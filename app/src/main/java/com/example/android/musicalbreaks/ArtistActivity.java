@@ -1,11 +1,10 @@
 package com.example.android.musicalbreaks;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -21,6 +20,9 @@ public class ArtistActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.artist_list);
+
+        //To customise home button in action bar
+        getSupportActionBar().setHomeAsUpIndicator(R.mipmap.ic_action_home);
 
         //To slide from left to right between activities
         overridePendingTransition(R.anim.anim, R.anim.anim2);
